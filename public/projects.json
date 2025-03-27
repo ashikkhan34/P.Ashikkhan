@@ -1,0 +1,64 @@
+
+[
+      {
+        "id": 1,
+        "image":"https://i.ibb.co.com/hFKNH70k/web-development.jpg",
+        "name": "Programming Club PPI",
+        "description": "The Programming Club of Pabna Polytechnic Institute is a community of passionate coders, developers, and tech enthusiasts. Our mission is to empower students with programming skills, encourage problem-solving, and foster innovation through collaboration.",
+        "technologies": ["React.js", "Vite.js", "Express.js", "MongoDB", "Firebase"],
+        "github_clint": "https://github.com/ashikkhan34/programming-club-clint.git",
+        "github_server": "https://github.com/ashikkhan34/programming-club-server.git",
+        "live": "https://programming-club-cc982.web.app/"
+      },
+      {
+        "id": 2,
+        "image":"https://i.ibb.co.com/TRWbpQK/helcat.jpg",
+        "name": "Car Rental",
+        "description": "A Car Rental Website allows users to browse, book, and rent vehicles with ease. Customers can filter cars based on type, price, and availability, ensuring they find the perfect ride for their needs. With real-time booking, secure payments, and location-based services, the platform provides a seamless rental experience.",
+        "technologies": ["Node.js","React.js", "Tailwind CSS", "Firebase","MongoDB"],
+        "github_clint": "https://github.com/ashikkhan34/car-rental-clint",
+        "github_server": "https://github.com/ashikkhan34/car-rental-server",
+        "live": "https://car-rental-80b7d.web.app/"
+      },
+      {
+        "id": 3,
+        "name": "Bisto-boss Restorenet",
+        "image":"https://i.ibb.co.com/Lhhf78f7/restaurant-interior.jpg",
+        "description": "A Bistro Boss Restaurant Website is designed to offer a smooth and enjoyable dining experience, whether customers choose to dine in, order online, or reserve a table in advance. The website features an interactive menu, allowing visitors to explore delicious dishes with images, descriptions, and pricing.",
+        "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
+        "github_clint": "https://github.com/ashikkhan34/bosto-boss-clint",
+        "github_server": "https://github.com/ashikkhan34/bisto-boss-server",
+        "live": "https://bistro-boss-31bcd.web.app/"
+      },
+      {
+        "id": 4,
+        "image":"https://i.ibb.co.com/jwkPxvn/3.jpg",
+        "name": "Asset Management",
+        "description": "An Asset Management System is a comprehensive tool designed to efficiently track, manage, and maintain both physical and digital assets throughout their lifecycle. This system helps businesses keep an accurate record of all assets, from acquisition to disposal, ensuring that resources are utilized optimally and costs are controlled.",
+        "technologies": ["Node.js", "Tailwind CSS", "Framer Motion","React.js","Express.js"],
+        "github_clint": "https://github.com/ashikkhan34/Asset-track-pro-clint",
+        "github_server": "https://github.com/ashikkhan34/Asset-track-pro-server",
+        "live": "https://assecttrack.web.app/"
+      },
+      {
+        "id": 5,
+        "image":"https://i.ibb.co.com/G3vJ98TX/cricket-equipment-digital-art.jpg",
+        "name": "Cricket Management",
+        "description": "A Cricket Management System is designed to streamline the administration of cricket teams, players, and tournaments. It enables seamless player management, allowing teams to track player performance, injuries, and availability. Team management features help in assigning roles, scheduling practice sessions, and managing squads effectively.",
+        "technologies": ["React.js","HTML","Java Script", "Tailwind CSS"],
+        "github_clint": "https://github.com/ashikkhan34/assignment-7",
+        "live": "https://cricket-project-assignment-7.surge.sh/"
+      },
+      {
+        "id": 6,
+        "image":"https://i.ibb.co.com/J53Rx8n/f.png",
+        "name": "Game Review",
+        "description": "A Game Review Website serves as a hub for both gamers and industry professionals to explore, review, and discover the latest in gaming. The platform allows users to write detailed game reviews and rate games based on personal experiences. This includes the ability to comment and discuss games, creating a community-driven space for feedback and recommendations.",
+        "technologies": ["React.js","Node.js","Java Script", "Tailwind CSS","MongoDB","Firebase"],
+        "github_clint": "https://github.com/ashikkhan34/A10-game-review-clint",
+        "github_server": "https://github.com/ashikkhan34/A10-game-review-server",
+        "live": "https://game-review-b3d7d.web.app/"
+      }
+    ]
+
+  
