@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 export default function Navbar() {
   const links = <>
   <NavLink to='/'><li><a>Home</a></li> </NavLink>
-  <NavLink to='/aboutUs'><li><a>About</a></li> </NavLink>
+  <NavLink to='/aboutUs'><li><a>About Us</a></li> </NavLink>
   <NavLink to='/allProjects'><li><a>Projects</a></li> </NavLink>
-  <NavLink to='/contact'><li><a>Contact</a></li> </NavLink>
+  <NavLink to='/contact'><li><a>Contact Us</a></li> </NavLink>
   </>
   return (
     <div>
