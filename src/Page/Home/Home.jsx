@@ -3,8 +3,8 @@ import Hero from '../../Components/Hero/Hero'
 import Experience from '../../Components/Experience/Experience'
 import About from '../../Components/About/About'
 import Skills from '../../Components/Skills/Skills'
-import Projects from '../../Components/Projects/Projects'
 import Feature from '../../Components/Feature/Feature'
+import Projects from '../../Components/Projects/Projects'
 
 export default function Home() {
   return (
