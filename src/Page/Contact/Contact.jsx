@@ -34,10 +34,10 @@ const Contact = () => {
 
     return (
         <div className="  gap-10 pt-28 bg-gradient-to-r from-black via-blue-900 to-purple-950 py-10">
-            <div className="md:flex gap-10">
+            <div className="md:flex gap-10 mx-auto">
                 <div data-aos="fade-right"
-                        data-aos-duration="3000" className="w-6/12">
-                    <div className="max-w-xl mx-auto bg-indigo-900 p-6 rounded-lg shadow-md">
+                        data-aos-duration="3000" className="w-full md:w-6/12">
+                    <div className=" w-full md:w-xl mx-auto bg-indigo-900 p-6 rounded-lg shadow-md">
                         <h2 className="text-xl font-bold text-center mb-4 text-purple-500">Let’s work
                             together!</h2>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -78,9 +78,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div data-aos="fade-left"
-                    data-aos-duration="3000" className="w-6/12 space-y-6">
+                    data-aos-duration="3000" className=" w-full md:w-6/12 space-y-6 p-3">
                     <h1 className="text-2xl text-cyan-400" >I'm currently available to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7.</h1>
-                    <h1 className="flex items-center gap-1 text-xl "><FaWhatsapp className="text-green-500"></FaWhatsapp> +88 01817551314</h1>
+                    <h1 className="flex items-center gap-1 text-xl underline text-blue-400"><FaWhatsapp className="text-green-500"></FaWhatsapp> <a href="https://web.whatsapp.com/" target="_blank"> +88 01817551314</a></h1>
                     <h1 ><a className="flex items-center gap-1 text-xl underline text-blue-300" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"> <MdEmail></MdEmail> ashikkhan314167@gmail.com</a></h1>
 
 

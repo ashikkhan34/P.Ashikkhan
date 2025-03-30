@@ -28,6 +28,13 @@ export default function ProjectDetails() {
                                     <li className='text-purple-500' key={index}>{tech}</li>
                                 ))}
                             </ul>
+                            : <p  className='text-green-500 font-semibold'>features :</p >
+                            <p>{project.features.map(feature => (
+                                        <ul >
+                                            
+                                            <li>~ {feature}</li>
+                                        </ul>
+                                    ))}</p>
                             <p className='text-blue-300'>{project.description}</p>
                             <div data-aos="fade-up"
                                 data-aos-duration="3000" className='mt-10 space-x-5'>

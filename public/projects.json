@@ -8,7 +8,8 @@
         "technologies": ["React.js", "Vite.js", "Express.js", "MongoDB", "Firebase"],
         "github_clint": "https://github.com/ashikkhan34/programming-club-clint.git",
         "github_server": "https://github.com/ashikkhan34/programming-club-server.git",
-        "live": "https://programming-club-cc982.web.app/"
+        "live": "https://programming-club-cc982.web.app/",
+        "features":["Users will always get updated information","Clean and responsive designed","Have a beautiful dashboard and admin panel","Admin can control this website"]
       },
       {
         "id": 2,
@@ -18,7 +19,8 @@
         "technologies": ["Node.js","React.js", "Tailwind CSS", "Firebase","MongoDB"],
         "github_clint": "https://github.com/ashikkhan34/car-rental-clint",
         "github_server": "https://github.com/ashikkhan34/car-rental-server",
-        "live": "https://car-rental-80b7d.web.app/"
+        "live": "https://car-rental-80b7d.web.app/",
+        "features":["User Authentication","Payment Integration","Booking System","Clean and responsive designed"]
       },
       {
         "id": 3,
@@ -28,7 +30,8 @@
         "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
         "github_clint": "https://github.com/ashikkhan34/bosto-boss-clint",
         "github_server": "https://github.com/ashikkhan34/bisto-boss-server",
-        "live": "https://bistro-boss-31bcd.web.app/"
+        "live": "https://bistro-boss-31bcd.web.app/",
+        "features":["Admin Dashboard","Customer Reviews & Ratings","Payment Integration","Table Reservation System"]
       },
       {
         "id": 4,
@@ -38,7 +41,8 @@
         "technologies": ["Node.js", "Tailwind CSS", "Framer Motion","React.js","Express.js"],
         "github_clint": "https://github.com/ashikkhan34/Asset-track-pro-clint",
         "github_server": "https://github.com/ashikkhan34/Asset-track-pro-server",
-        "live": "https://assecttrack.web.app/"
+        "live": "https://assecttrack.web.app/",
+        "features":["Maintenance & Service Management","HR Manager","HR Manager","Mobile Access"]
       },
       {
         "id": 5,
@@ -47,7 +51,8 @@
         "description": "A Cricket Management System is designed to streamline the administration of cricket teams, players, and tournaments. It enables seamless player management, allowing teams to track player performance, injuries, and availability. Team management features help in assigning roles, scheduling practice sessions, and managing squads effectively.",
         "technologies": ["React.js","HTML","Java Script", "Tailwind CSS"],
         "github_clint": "https://github.com/ashikkhan34/assignment-7",
-        "live": "https://cricket-project-assignment-7.surge.sh/"
+        "live": "https://cricket-project-assignment-7.surge.sh/",
+        "features":["Team Management","Umpire & Official Management","Umpire & Official Management"]
       },
       {
         "id": 6,
@@ -57,7 +62,8 @@
         "technologies": ["React.js","Node.js","Java Script", "Tailwind CSS","MongoDB","Firebase"],
         "github_clint": "https://github.com/ashikkhan34/A10-game-review-clint",
         "github_server": "https://github.com/ashikkhan34/A10-game-review-server",
-        "live": "https://game-review-b3d7d.web.app/"
+        "live": "https://game-review-b3d7d.web.app/",
+        "features":["Expert Reviews","Search & Filter Options","Latest News & Updates","Game Trailers & Media"]
       }
     ]
 

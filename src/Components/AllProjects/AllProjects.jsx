@@ -22,9 +22,9 @@ export default function AllProjects() {
                                     </figure>
                                     <div className="card-body">
                                         <h2 className="card-title text-cyan-300">{project.name}</h2>
-                                        <p>{project.technologies.map(tec => (
+                                        <p>{project.features.map(feature => (
                                             <ul >
-                                                <li>~ {tec}</li>
+                                                <li>~ {feature}</li>
                                             </ul>
                                         ))}</p>
                                         <div className="card-actions justify-end">
