@@ -14,7 +14,7 @@ import express from '../../assets/icons/express.png'
 export default function Skills() {
   return (
     <div className='bg-gradient-to-r from-black via-purple-950 to-black py-10'>
-        <h1 className='text-center text-6xl font-bold text-purple-700 p-9'>---My Skills---</h1>
+        <h1 className='text-center text-6xl font-bold text-purple-700 p-9'>My Skills</h1>
         <Marquee>
                 <div className='flex gap-6 '>
                     <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5'>

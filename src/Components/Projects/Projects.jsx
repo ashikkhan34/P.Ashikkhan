@@ -6,7 +6,7 @@ export default function Projects() {
     const [projects] = useProjects()
   return (
     <div className='bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen'>
-    <h1 className='text-5xl text-center p-8 font-bold  text-cyan-500'>---My Projects---  </h1>
+    <h1 className='text-5xl text-center p-8 font-bold  text-cyan-500'>My Projects  </h1>
 
     <div data-aos="fade-up"
         data-aos-duration="3000" className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
