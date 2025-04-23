@@ -5,7 +5,7 @@ export default function Experience() {
     return (
         <div className='bg-gradient-to-r from-blue-950 via-black to-purple-900 py-10'>
             <div data-aos="fade-up"
-                data-aos-duration="3000" className="stats shadow mx-auto block md:flex max-w-2/3 bg-gradient-to-r from-blue-950 via-black to-purple-900">
+                data-aos-duration="3000" className="stats shadow mx-auto block md:flex max-w-2/3 bg-gradient-to-r from-blue-950 via-black to-purple-900 text-white">
                 <div className="stat place-items-center">
                     <div className="stat-title">Projects</div>
                     <div className="stat-value"><CountUp end={55} duration={10}></CountUp></div>

@@ -15,7 +15,7 @@ export default function ProjectDetails() {
         <div className='pt-16'>
             <div>
                 <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen ">
-                    <div className=" p-6 flex  text-white">
+                    <div className=" p-6 md:flex  text-white">
                         <img data-aos="fade-right"
                             data-aos-duration="3000" className="w-6/12 my-4 rounded" src={project.image} alt={project.name} />
                         <div data-aos="fade-left"
