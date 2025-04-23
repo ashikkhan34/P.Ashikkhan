@@ -17,9 +17,9 @@ export default function ProjectDetails() {
                 <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen ">
                     <div className=" p-6 md:flex  text-white">
                         <img data-aos="fade-right"
-                            data-aos-duration="3000" className="w-6/12 my-4 rounded" src={project.image} alt={project.name} />
+                            data-aos-duration="3000" className=" w-full md:w-6/12 my-4 rounded" src={project.image} alt={project.name} />
                         <div data-aos="fade-left"
-                            data-aos-duration="3000" className='ml-10 w-6/12'>
+                            data-aos-duration="3000" className='ml-10 md:w-6/12'>
                             <h1 className="text-4xl font-bold text-cyan-400">{project.name}</h1>
 
                             <h3 className="text-xl mt-4">Technologies Used:</h3>
@@ -28,7 +28,7 @@ export default function ProjectDetails() {
                                     <li className='text-purple-500' key={index}>{tech}</li>
                                 ))}
                             </ul>
-                            : <p  className='text-green-500 font-semibold'>features :</p >
+                            <p  className='text-green-500 font-semibold'>features :</p >
                             <p>{project.features.map(feature => (
                                         <ul >
                                             
