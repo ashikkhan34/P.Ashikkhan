@@ -13,7 +13,7 @@ export default function Projects() {
         {
             projects.slice(0, 3).map(project => (
                 <div key={project.id}>
-                    <div className="card bg-indigo-950 h-[400px]  shadow-sm">
+                    <div className="card bg-indigo-950 h-[400px] hover:scale-x-105 hover:shadow-pink-600  shadow-sm">
                         <figure>
                             <img
                                 src={project.image}
