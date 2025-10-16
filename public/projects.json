@@ -1,6 +1,31 @@
 [
   {
-    "id": 0,
+    "id": 51,
+    "name":"Learning Management System",
+    "image":"https://i.ibb.co.com/FkQ12pjy/Screenshot-2025-10-16-215944.png",
+    "description":"A web-based Learning Management System (LMS) designed to streamline online education. It allows students to enroll in courses, access materials, and track progress, while mentors can create courses, manage content, and monitor student performance. The system features seminar/event management, real-time updates, and secure authentication. Built with MERN stack (MongoDB, Express.js, React.js, Node.js) and enhanced with Firebase Authentication.",
+    "technologies":[
+      "Express.js",
+      "MongoDB",
+      "Framer Motion",
+      "React.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Type Script"
+    ],
+    "github_clint":"https://github.com/ashikkhan34/LMS-PROJECT-F",
+    "github_server":"https://github.com/ashikkhan34/LMS-PROJECT",
+    "live":"https://lms-project-f.vercel.app/",
+    "features":[
+      "Admin Can Control all features and access",
+      "Student Dashboard: Access courses, track progress, and view enrolled seminars.",
+      "Mentor Dashboard: Create and manage courses, upload materials, and monitor students.",
+      "Course Management: Browse, enroll, and complete courses with structured content."
+    ]
+
+  },
+  {
+    "id": 5454,
     "image": "https://i.ibb.co.com/0j4bB8Z0/Annotation-2025-04-21-135408.png",
     "name": "Apple-Store",
     "description": "The Apple Store is Apple's official retail chain, offering products like iPhone, Mac, iPad, Apple Watch, and accessories.It provides services such as the Genius Bar for technical support and repairs.As of 2025, Apple operates over 500 stores worldwide, creating immersive brand experiences for customers.",
