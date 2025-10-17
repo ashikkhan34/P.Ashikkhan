@@ -25,7 +25,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-indigo-950 via-blue-950 to-purple-950 shadow-lg z-50 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 w-full bg-gray-400/10 shadow-lg z-50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center text-white">
         {/* Logo Section */}
         <div className="flex items-center gap-3">
