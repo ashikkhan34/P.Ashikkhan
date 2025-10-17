@@ -90,7 +90,7 @@ export default function Hero() {
                 <FaGithub className="text-3xl "></FaGithub>{" "}
               </a>
             </div>
-            <button>
+            {/* <button>
               <a
                 href={resume}
                 target="_blank"
@@ -133,7 +133,7 @@ export default function Hero() {
                   Download Resume
                 </span>
               </a>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

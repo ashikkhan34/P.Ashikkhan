@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
 import { NavLink } from 'react-router-dom';
-import resume from '../../assets/RESUME.pdf';
+import resume from '../../assets/MD ASHIK KHAN.pdf'
 import './navbar.css';
 
 export default function Navbar() {
