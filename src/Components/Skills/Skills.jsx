@@ -7,6 +7,7 @@ import tailwind from '../../assets/icons/tailwind.png'
 import bootstrap from '../../assets/icons/bootstrap.jfif'
 import react from '../../assets/icons/react.png'
 import next from '../../assets/icons/next.png'
+import typeScript from '../../assets/icons/download.png'
 import node from '../../assets/icons/node.png'
 import mongodb from '../../assets/icons/mongo.png'
 import firebase from '../../assets/icons/firebase.png'
@@ -17,31 +18,31 @@ export default function Skills() {
         <h1 className='text-center text-6xl font-bold text-purple-700 p-9'>My Skills</h1>
         <Marquee>
                 <div className='flex gap-6 '>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5'>
                         <h1 className='text-auto mt-2 text-center text-blue-400'>HTML</h1>
                         <img className="mx-auto w-16 p-2 " src={html} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>CSS</h1>
                         <img className="mx-auto  w-16 p-2 " src={css} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>Java Script</h1>
                         <img className="mx-auto  w-16 p-2 " src={js} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>React js </h1>
                         <img className="mx-auto  w-16 p-2 " src={react} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>Next js</h1>
                         <img className="mx-auto  w-16 p-2 " src={next} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>tailwind</h1>
                         <img className="mx-auto  w-16 p-2 " src={tailwind} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>bootstrap</h1>
                         <img className="mx-auto  w-16 p-2 " src={bootstrap} alt="" />
                     </div>
@@ -49,21 +50,25 @@ export default function Skills() {
             </Marquee>
             <Marquee direction='right'>
                 <div className='flex gap-6'>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5'>
                         <h1 className='text-auto  text-center text-blue-400'>Firebase</h1>
                         <img className=" w-16 p-2 mx-auto  "  src={firebase} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>Express</h1>
                         <img className="mx-auto  w-16 p-2 " src={express} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>Node js</h1>
                         <img className="mx-auto  w-16 p-2 " src={node} alt="" />
                     </div>
-                    <div className=' w-32 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
                         <h1 className='text-center mt-4 text-blue-400'>Mongo DB </h1>
                         <img className="mx-auto  w-16 p-2 " src={mongodb} alt="" />
+                    </div>
+                    <div className=' w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl'>
+                        <h1 className='text-center mt-4 text-blue-400'>Type Script </h1>
+                        <img className="mx-auto  w-16 p-2 " src={typeScript} alt="" />
                     </div>
                 </div>
             </Marquee>
