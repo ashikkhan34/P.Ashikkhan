@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import useProjects from "../../Hooks/useProjects";
 import { FaGithub, FaServer, FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
+import img2 from '../../assets/animated/react.svg'
 
 export default function ProjectDetails() {
   const { id } = useParams();
@@ -76,7 +77,8 @@ export default function ProjectDetails() {
             <h3 className="text-2xl font-semibold text-green-400 mb-3">
               Key Features
             </h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+           <div className="md:flex items-center justify-between">
+             <ul className="list-disc list-inside text-gray-300 space-y-1">
               {project.features.map((feature, i) => (
                 <motion.li
                   key={i}
@@ -87,6 +89,18 @@ export default function ProjectDetails() {
                 </motion.li>
               ))}
             </ul>
+            <motion.img
+              className="w-20 md:w-60 md:mr-32"
+              src={img2}
+              alt="React Logo"
+              animate={{ rotate:360 }} // scale from normal to bigger and back
+              transition={{
+                duration: 2, // total duration of one cycle
+                repeat: Infinity, // keep repeating
+                ease: "easeInOut", // smooth animation
+              }}
+            />
+           </div>
           </div>
 
           {/* Buttons */}

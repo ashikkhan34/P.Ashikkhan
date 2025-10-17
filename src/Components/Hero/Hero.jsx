@@ -3,6 +3,8 @@ import ashik from "../../assets/ashik.png";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
 import resume from "../../assets/RESUME.pdf";
+import react from "../../assets/animated/react.svg";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const texts = [
@@ -49,14 +51,16 @@ export default function Hero() {
   return (
     <div>
       <div className="hero bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="hero-content flex-col lg:flex-row gap-4 items-center">
           <img
             data-aos="fade-left"
             data-aos-duration="3000"
             src={ashik}
             className="md:max-w-7xl border-b-4 rounded-full border-blue-950"
           />
-          <div data-aos="fade-right" data-aos-duration="3000">
+          <div 
+          className="mt-12"
+          data-aos="fade-right" data-aos-duration="3000">
             <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
               Ashik khan
             </h1>
@@ -90,50 +94,65 @@ export default function Hero() {
                 <FaGithub className="text-3xl "></FaGithub>{" "}
               </a>
             </div>
-            {/* <button>
-              <a
-                href={resume}
-                target="_blank"
-                class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-indigo-950 group"
-              >
-                <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
-                <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                  <svg
-                    class="w-5 h-5 text-green-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
-                </span>
-                <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                  <svg
-                    class="w-5 h-5 text-green-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
-                </span>
-                <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Download Resume
-                </span>
-              </a>
-            </button> */}
+            <div className="flex justify-between -mt-20">
+              <button>
+                <a
+                  href={resume}
+                  download="Ashik khan.pdf"
+                  class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-indigo-950 group"
+                >
+                  <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+                  <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                    <svg
+                      class="w-5 h-5 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                    <svg
+                      class="w-5 h-5 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                    Download Resume
+                  </span>
+                </a>
+              </button>
+              <div>
+                <motion.img
+                  className=""
+                  src={react}
+                  alt="React Logo"
+                  animate={{ rotate: 360 }} // scale from normal to bigger and back
+                  transition={{
+                    duration: 2, // total duration of one cycle
+                    repeat: Infinity, // keep repeating
+                    ease: "linear", // smooth animation
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
