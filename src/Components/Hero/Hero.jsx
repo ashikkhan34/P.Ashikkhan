@@ -49,111 +49,122 @@ export default function Hero() {
   }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
-    <div>
-      <div className="hero bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row gap-4 items-center">
-          <img
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            src={ashik}
-            className="md:max-w-7xl border-b-4 rounded-full border-blue-950"
-          />
-          <div 
-          className="mt-12"
-          data-aos="fade-right" data-aos-duration="3000">
-            <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-              Ashik khan
-            </h1>
-            <h1 className="text-cyan-500 font-bold">{displayText}</h1>
-            <h3 className="font-bold text-gray-400">
-              Junior Front-End Developer || Junior Mern Stack Developer ||
-              junior Full-Stack Developer
-            </h3>
-            <p className="py-6">
-              As a web developer, you don t just write code—you craft digital
-              experiences that seamlessly blend functionality with creativity,
-              turning ideas into interactive realities. 🚀💻
-            </p>
-            <div className="flex gap-5 mb-5">
-              <a
-                href="https://www.facebook.com/profile.php?id=100069225215551"
-                target="_blank"
-              >
-                {" "}
-                <FaFacebook className="text-3xl text-blue-600"></FaFacebook>{" "}
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ashik-khan-44abbb300/ "
-                target="_blank"
-              >
-                {" "}
-                <LiaLinkedin className="text-3xl bg-blue-600"></LiaLinkedin>{" "}
-              </a>
-              <a href="https://github.com/ashikkhan34" target="_blank">
-                {" "}
-                <FaGithub className="text-3xl "></FaGithub>{" "}
-              </a>
-            </div>
-            <div className="flex justify-between -mt-20">
-              <button>
-                <a
-                  href={resume}
-                  download="Ashik khan.pdf"
-                  class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-indigo-950 group"
-                >
-                  <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
-                  <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                    <svg
-                      class="w-5 h-5 text-green-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                    <svg
-                      class="w-5 h-5 text-green-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                    Download Resume
-                  </span>
-                </a>
-              </button>
-              <div>
-                <motion.img
-                  className=""
-                  src={react}
-                  alt="React Logo"
-                  animate={{ rotate: 360 }} // scale from normal to bigger and back
-                  transition={{
-                    duration: 2, // total duration of one cycle
-                    repeat: Infinity, // keep repeating
-                    ease: "linear", // smooth animation
-                  }}
-                />
-              </div>
-            </div>
+    <div className="hero bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-20">
+      <div className="hero-content flex flex-col-reverse md:flex-row items-center gap-10">
+        {/* ===== Text Section ===== */}
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          className="text-center md:text-left w-full md:w-1/2"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+            Ashik Khan
+          </h1>
+
+          {/* Dynamic typing text */}
+          <h2 className="text-cyan-400 text-xl hidden md:block font-semibold mt-3">
+            {displayText}
+          </h2>
+
+          <h3 className="font-bold text-gray-400 text-sm sm:text-base md:text-lg mt-2">
+            Junior Front-End Developer || Junior MERN Stack Developer ||
+            Junior Full-Stack Developer
+          </h3>
+
+          <p className="py-6 text-gray-300 text-sm sm:text-base">
+            As a web developer, you don’t just write code—you craft digital
+            experiences that seamlessly blend functionality with creativity,
+            turning ideas into interactive realities. 🚀💻
+          </p>
+
+          {/* Social Links */}
+          <div className="flex justify-center md:justify-start gap-5 mb-5">
+            <a
+              href="https://www.facebook.com/profile.php?id=100069225215551"
+              target="_blank"
+            >
+              <FaFacebook className="text-3xl text-blue-600 hover:scale-110 transition-transform" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ashik-khan-44abbb300/"
+              target="_blank"
+            >
+              <LiaLinkedin className="text-3xl text-blue-500 hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://github.com/ashikkhan34" target="_blank">
+              <FaGithub className="text-3xl text-white hover:scale-110 transition-transform" />
+            </a>
           </div>
+
+          {/* Resume Button */}
+          <div className="flex justify-center md:justify-start">
+            <a
+              href={resume}
+              download="Ashik-Khan.pdf"
+              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-indigo-950 group"
+            >
+              <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+              <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                Download Resume
+              </span>
+            </a>
+          </div>
+        </div>
+
+        {/* ===== Image Section ===== */}
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          className="flex flex-col items-center w-full md:w-1/2"
+        >
+          <img
+            src={ashik}
+            className="w-60 sm:w-72 md:w-96 border-b-4 rounded-full border-blue-950 mb-5"
+            alt="Ashik Khan"
+          />
+
+          {/* Rotating React Logo */}
+          <motion.img
+            className="w-16 sm:w-20 md:w-24"
+            src={react}
+            alt="React Logo"
+            animate={{ rotate: 360 }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
         </div>
       </div>
     </div>

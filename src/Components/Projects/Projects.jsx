@@ -22,7 +22,7 @@ export default function Projects() {
                         <div className="card-body">
                             <h2 className="card-title text-cyan-300">{project.name}</h2>
                             <p>{project.features.map(feature => (
-                                <ul >
+                                <ul key={project.id} >
                                     <li>~ {feature}</li>
                                 </ul>
                             ))}</p>

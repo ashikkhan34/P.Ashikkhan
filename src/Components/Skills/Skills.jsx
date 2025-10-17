@@ -31,7 +31,7 @@ export default function Skills() {
             ease: "easeInOut", // smooth animation
           }}
         />
-        <h1 className="text-center text-6xl font-bold text-purple-700 p-9">
+        <h1 className="text-center text-2xl md:text-6xl font-bold text-purple-700 p-9">
           My Skills
         </h1>
         <motion.img
