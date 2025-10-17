@@ -155,7 +155,7 @@ export default function Hero() {
 
           {/* Rotating React Logo */}
           <motion.img
-            className="w-16 sm:w-20 md:w-24"
+            className="w-16 sm:w-20 md:w-40"
             src={react}
             alt="React Logo"
             animate={{ rotate: 360 }}
