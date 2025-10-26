@@ -4,7 +4,7 @@ import { SiCodefresh } from 'react-icons/si'
 
 export default function Feature() {
     return (
-        <div className='bg-gradient-to-r from-blue-950 via-black  to-purple-900 md:flex justify-evenly py-5 px-20 space-y-5'>
+        <div className='bg-gradient-to-r from-blue-950 via-black  to-purple-900 md:flex justify-evenly py-10 px-20 space-y-5'>
             <div data-aos="fade-up"
      data-aos-duration="2000" className='w-52 h-60 text-center hover:scale-x-125 hover:rotate-3 hover:shadow-pink-500 shadow-xl p-2   border-4 bg-blue-950 border-blue-600  rounded-2xl'>
                 <FaStarOfDavid className='text-7xl flex mx-auto text-red-500' />

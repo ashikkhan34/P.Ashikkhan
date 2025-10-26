@@ -7,7 +7,7 @@ export default function MainlayOut() {
   return (
     <div className='text-white'>
         <Navbar></Navbar>
-        <div className='container mx-auto'>
+        <div>
           <Outlet></Outlet>
         </div>
         <Footer></Footer>

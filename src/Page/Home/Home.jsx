@@ -11,9 +11,9 @@ export default function Home() {
     <div>
       <Hero></Hero>
       <Experience></Experience>
-      <About></About>
       <Skills></Skills>
       <Projects></Projects>
+      <About></About>
       <Feature></Feature>
     </div>
   )
