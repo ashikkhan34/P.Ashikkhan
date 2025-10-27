@@ -7,7 +7,7 @@ import img2 from "../../assets/animated/blue-square.svg";
 export default function About() {
   return (
     <div className="hero  bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="container hero-content flex-col lg:flex-row-reverse">
         <img
           data-aos="fade-left"
           data-aos-duration="3000"

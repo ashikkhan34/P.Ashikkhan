@@ -8,7 +8,7 @@ export default function Experience() {
     return (
         <div className='bg-gradient-to-r from-blue-950 via-black to-purple-900 '>
             <div data-aos="fade-up"
-                data-aos-duration="3000" className="stats shadow mx-auto block md:flex max-w-2/3 bg-gradient-to-r from-blue-950 via-black to-purple-900 text-white pt-12">
+                data-aos-duration="3000" className="container stats shadow mx-auto block md:flex max-w-2/3 bg-gradient-to-r from-blue-950 via-black to-purple-900 text-white pt-12">
                 <div className="stat place-items-center">
                     <div className="stat-title text-white">Projects</div>
                     <div className="stat-value"><CountUp end={55} duration={10}></CountUp></div>

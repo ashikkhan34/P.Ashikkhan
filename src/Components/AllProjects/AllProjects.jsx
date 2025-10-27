@@ -14,7 +14,7 @@ export default function AllProjects() {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 "
+          className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 "
         >
           {projects.map((project) => (
             <div key={project.id}>
