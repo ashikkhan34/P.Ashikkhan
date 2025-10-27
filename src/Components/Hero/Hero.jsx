@@ -62,7 +62,7 @@ export default function Hero() {
           </h1>
 
           {/* Dynamic typing text */}
-          <h2 className="text-cyan-400 text-xl hidden md:block font-semibold mt-3">
+          <h2 className="h-6 text-cyan-400 text-xl  font-semibold mt-3">
             {displayText}
           </h2>
 
