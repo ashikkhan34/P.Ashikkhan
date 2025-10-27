@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Projects() {
     const [projects] = useProjects()
   return (
-    <div className='bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen'>
+    <div className='bg-gradient-to-r from-blue-950 via-black to-purple-900 py-10'>
     <h1 className='text-5xl text-center p-8 font-bold  text-cyan-500'>My Projects  </h1>
 
     <div data-aos="fade-up"
@@ -13,7 +13,7 @@ export default function Projects() {
         {
             projects.slice(0, 3).map(project => (
                 <div key={project.id}>
-                    <div className="card bg-indigo-950 h-[400px] hover:scale-x-105 hover:shadow-pink-600  shadow-sm">
+                    <div className="card bg-indigo-950 h-[400px] hover:scale-x-105 hover:ease-in-out hover:transform hover:duration-1000 hover:shadow-pink-600  shadow-sm">
                         <figure>
                             <img
                                 src={project.image}
