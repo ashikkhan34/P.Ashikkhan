@@ -1,5 +1,29 @@
 [
   {
+    "id":55,
+    "name":"Career-Boots",
+    "image":"https://i.ibb.co.com/gZqrZBQG/Screenshot-2025-11-03-111457.png",
+    "description":"Career Boots is a smart learning platform designed to enhance students’ skills and career readiness. It features an AI-powered learning assistant that provides instant answers and guidance, helping users learn efficiently. The platform also offers a dynamic user dashboard, allowing students to track their enrolled courses, monitor progress, and discover new learning opportunities seamlessly. With a secure backend powered by Firebase Authentication and MongoDB, Career Boots ensures safe login, real-time updates, and smooth course management for all users.",
+    "technologies":[
+      "Express.js",
+      "MongoDB",
+      "Framer Motion",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Type Script"
+    ],
+    "github_clint":"https://github.com/ashikkhan34/career-boots-clint",
+    "github_server":"https://github.com/ashikkhan34/career-boots-server",
+    "live":"https://career-boots-clint.vercel.app/",
+    "features":[
+      "Secure Backend: Firebase Authentication and MongoDB ensure safe login and real-time updates.",
+      "User Dashboard: Track courses, progress, and enroll in new ones easily.",
+      "AI Learning Assistant: Get instant answers and guidance with Gemini AI.",
+      "Dark and Light Mood Toggle System"
+    ]
+  },
+  {
     "id": 51,
     "name":"Learning Management System",
     "image":"https://i.ibb.co.com/FkQ12pjy/Screenshot-2025-10-16-215944.png",

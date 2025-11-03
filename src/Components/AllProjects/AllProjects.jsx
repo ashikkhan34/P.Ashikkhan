@@ -18,9 +18,9 @@ export default function AllProjects() {
         >
           {projects.map((project) => (
             <div key={project.id}>
-              <div className="card bg-indigo-950 h-[450px] hover:scale-x-105 hover:shadow-pink-500  shadow-sm mb-10">
+              <div className="card bg-indigo-950 h-[500px] hover:scale-x-105 hover:shadow-pink-500  shadow-sm mb-10">
                 <figure>
-                  <img  src={project.image} alt="Shoes" />
+                  <img  src={project.image} className="h-[300px]" alt="Shoes" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title text-cyan-300">{project.name}</h2>
@@ -31,7 +31,12 @@ export default function AllProjects() {
                       </ul>
                     ))}
                   </p>
-                  <div className="card-actions justify-end">
+                  <div className="card-actions justify-between">
+                    <Link to={project.live}>
+                      {" "}
+                      <button className="btn btn-success">Live Link</button>
+                    </Link>
+
                     <Link to={`/projectDetails/${project.id}`}>
                       {" "}
                       <button className="btn btn-primary">Details More</button>
