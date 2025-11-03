@@ -86,7 +86,7 @@ export default function Hero() {
               <FaFacebook className="text-3xl text-blue-600 hover:scale-110 transition-transform" />
             </a>
             <a
-              href="https://www.linkedin.com/in/ashik-khan-44abbb300/"
+              href="https://www.linkedin.com/in/dev-ashikkhan/"
               target="_blank"
             >
               <LiaLinkedin className="text-3xl text-blue-500 hover:scale-110 transition-transform" />
