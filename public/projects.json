@@ -1,10 +1,34 @@
 [
   {
-    "id":55,
-    "name":"Career-Boots",
-    "image":"https://i.ibb.co.com/gZqrZBQG/Screenshot-2025-11-03-111457.png",
-    "description":"Career Boots is a smart learning platform designed to enhance students’ skills and career readiness. It features an AI-powered learning assistant that provides instant answers and guidance, helping users learn efficiently. The platform also offers a dynamic user dashboard, allowing students to track their enrolled courses, monitor progress, and discover new learning opportunities seamlessly. With a secure backend powered by Firebase Authentication and MongoDB, Career Boots ensures safe login, real-time updates, and smooth course management for all users.",
-    "technologies":[
+    "id": 65,
+    "name": "Mamarhat E-commerce",
+    "image": "https://i.ibb.co.com/Lz0svXGx/nutrition-facts-fresh-vegetable-digital-tablet.jpg",
+    "description": "MamarHat is a modern and fully featured full-stack eCommerce platform built using React, Next.js, Node.js, Express, and MongoDB. It offers essential functionalities such as user authentication, product management, dynamic product listings, a robust cart system, and a secure checkout process. The entire site is fully responsive with a clean and intuitive UI/UX, ensuring a smooth browsing and shopping experience across all devices. With real-time updates, optimized APIs, and a scalable backend architecture, the platform delivers high performance and reliability. Overall, MamarHat provides a complete and user-friendly online shopping solution designed for speed, convenience, and seamless interaction.",
+    "technologies": [
+      "Express.js",
+      "MongoDB",
+      "Framer Motion",
+      "Next.js",
+      "redux",
+      "Node.js",
+      "Tailwind CSS",
+      "Type Script"
+    ],
+    "github_clint": "https://github.com/ashikkhan34/mamarhat-c",
+    "github_server": "https://github.com/ashikkhan34/mamarhat-server",
+    "live": "https://mamarhat-c.vercel.app/",
+    "features": [
+      "Secure User Authentication ",
+      "Dynamic Product & Cart Management",
+      "Fully Responsive & Modern UI/UX"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Career-Boots",
+    "image": "https://i.ibb.co.com/VY2L42Sx/career-occuaptions-recruitment-job-search-concept.jpg",
+    "description": "Career Boots is a smart learning platform designed to enhance students’ skills and career readiness. It features an AI-powered learning assistant that provides instant answers and guidance, helping users learn efficiently. The platform also offers a dynamic user dashboard, allowing students to track their enrolled courses, monitor progress, and discover new learning opportunities seamlessly. With a secure backend powered by Firebase Authentication and MongoDB, Career Boots ensures safe login, real-time updates, and smooth course management for all users.",
+    "technologies": [
       "Express.js",
       "MongoDB",
       "Framer Motion",
@@ -13,22 +37,21 @@
       "Tailwind CSS",
       "Type Script"
     ],
-    "github_clint":"https://github.com/ashikkhan34/career-boots-clint",
-    "github_server":"https://github.com/ashikkhan34/career-boots-server",
-    "live":"https://career-boots-clint.vercel.app/",
-    "features":[
-      "Secure Backend: Firebase Authentication and MongoDB ensure safe login and real-time updates.",
-      "User Dashboard: Track courses, progress, and enroll in new ones easily.",
-      "AI Learning Assistant: Get instant answers and guidance with Gemini AI.",
+    "github_clint": "https://github.com/ashikkhan34/career-boots-clint",
+    "github_server": "https://github.com/ashikkhan34/career-boots-server",
+    "live": "https://career-boots-clint.vercel.app/",
+    "features": [
+      "Secure Backend: Zod validation",
+      "User and Admin Dashboard",
       "Dark and Light Mood Toggle System"
     ]
   },
   {
     "id": 51,
-    "name":"Learning Management System",
-    "image":"https://i.ibb.co.com/FkQ12pjy/Screenshot-2025-10-16-215944.png",
-    "description":"A web-based Learning Management System (LMS) designed to streamline online education. It allows students to enroll in courses, access materials, and track progress, while mentors can create courses, manage content, and monitor student performance. The system features seminar/event management, real-time updates, and secure authentication. Built with MERN stack (MongoDB, Express.js, React.js, Node.js) and enhanced with Firebase Authentication.",
-    "technologies":[
+    "name": "Learning Management System",
+    "image": "https://i.ibb.co.com/9HYcrx2y/city-committed-education-collage-concept.jpg",
+    "description": "A web-based Learning Management System (LMS) designed to streamline online education. It allows students to enroll in courses, access materials, and track progress, while mentors can create courses, manage content, and monitor student performance. The system features seminar/event management, real-time updates, and secure authentication. Built with MERN stack (MongoDB, Express.js, React.js, Node.js) and enhanced with Firebase Authentication.",
+    "technologies": [
       "Express.js",
       "MongoDB",
       "Framer Motion",
@@ -37,16 +60,14 @@
       "Tailwind CSS",
       "Type Script"
     ],
-    "github_clint":"https://github.com/ashikkhan34/LMS-PROJECT-F",
-    "github_server":"https://github.com/ashikkhan34/LMS-PROJECT",
-    "live":"https://lms-project-f.vercel.app/",
-    "features":[
-      "Admin Can Control all features and access",
-      "Student Dashboard: Access courses, track progress, and view enrolled seminars.",
-      "Mentor Dashboard: Create and manage courses, upload materials, and monitor students.",
+    "github_clint": "https://github.com/ashikkhan34/LMS-PROJECT-F",
+    "github_server": "https://github.com/ashikkhan34/LMS-PROJECT",
+    "live": "https://lms-project-f.vercel.app/",
+    "features": [
+      "Secure Backend: Zod validation and Smart UI Design",
+      "User, Admin and Mentor Dashboard",
       "Course Management: Browse, enroll, and complete courses with structured content."
     ]
-
   },
   {
     "id": 5454,
@@ -119,13 +140,7 @@
     "name": "Bisto-boss Restorenet",
     "image": "https://i.ibb.co.com/Lhhf78f7/restaurant-interior.jpg",
     "description": "A Bistro Boss Restaurant Website is designed to offer a smooth and enjoyable dining experience, whether customers choose to dine in, order online, or reserve a table in advance. The website features an interactive menu, allowing visitors to explore delicious dishes with images, descriptions, and pricing.",
-    "technologies": [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Stripe"
-    ],
+    "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
     "github_clint": "https://github.com/ashikkhan34/bosto-boss-clint",
     "github_server": "https://github.com/ashikkhan34/bisto-boss-server",
     "live": "https://bistro-boss-31bcd.web.app/",
@@ -163,12 +178,7 @@
     "image": "https://i.ibb.co.com/G3vJ98TX/cricket-equipment-digital-art.jpg",
     "name": "Cricket Management",
     "description": "A Cricket Management System is designed to streamline the administration of cricket teams, players, and tournaments. It enables seamless player management, allowing teams to track player performance, injuries, and availability. Team management features help in assigning roles, scheduling practice sessions, and managing squads effectively.",
-    "technologies": [
-      "React.js",
-      "HTML",
-      "Java Script",
-      "Tailwind CSS"
-    ],
+    "technologies": ["React.js", "HTML", "Java Script", "Tailwind CSS"],
     "github_clint": "https://github.com/ashikkhan34/assignment-7",
     "live": "https://cricket-project-assignment-7.surge.sh/",
     "features": [

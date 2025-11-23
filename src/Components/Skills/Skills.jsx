@@ -12,10 +12,11 @@ import node from "../../assets/icons/node.png";
 import mongodb from "../../assets/icons/mongo.png";
 import firebase from "../../assets/icons/firebase.png";
 import express from "../../assets/icons/express.png";
+import prisma from "../../assets/icons/prisma.png";
+import docker from "../../assets/icons/docker.png";
 import { motion } from "framer-motion";
 import img from "../../assets/animated/react.svg";
 import img2 from "../../assets/animated/js.svg";
-
 export default function Skills() {
   return (
     <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900  py-10">
@@ -33,6 +34,8 @@ export default function Skills() {
         />
         <h1 className="text-center text-2xl md:text-6xl font-bold text-purple-700 p-9">
           My Skills
+        <p className="w-80  mx-auto mt-4 active"></p>
+
         </h1>
         <motion.img
           className="w-40"
@@ -99,6 +102,14 @@ export default function Skills() {
           <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Type Script </h1>
             <img className="mx-auto  w-16 p-2 " src={typeScript} alt="" />
+          </div>
+          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+            <h1 className="text-center mt-4 text-blue-400">Prisma </h1>
+            <img className="mx-auto  w-16 p-2 " src={prisma} alt="" />
+          </div>
+          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+            <h1 className="text-center mt-4 text-blue-400">Docker </h1>
+            <img className="mx-auto  w-16 p-2 " src={docker} alt="" />
           </div>
         </div>
       </Marquee>

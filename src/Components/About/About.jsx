@@ -17,43 +17,33 @@ export default function About() {
         <div data-aos="fade-up" data-aos-duration="3000" className="p-5">
           <h1 className="text-5xl text-green-500 font-bold">Md.Ashik khan</h1>
           <p className="py-6">
-            I am Md. Ashik Khan, an Computer Engineer, MERN Stack Developer. I’m
-            currently working as a Front-End Developer with strong expertise in
-            React.js, Next.js, Tailwind CSS, Node.js, and MongoDB. I have
-            completed a MERN Stack Development course and worked on several
-            full-stack projects, including Bistro Boss Restaurant, which
-            features real-time updates and Firebase Authentication. I also built
-            a website for my college’s programming club and led a team during
-            development. Along with frontend development, I have experience in
-            advanced backend development using TypeScript, Mongoose, and Postman
-            for building and testing RESTful APIs. I’m also passionate about
-            search data analysis and currently doing an internship at BD Calling
-            Ltd, where I’m improving my full-stack and analytical skills.
+            I am Md. Ashik Khan, a Computer Engineer and MERN Stack Developer. I’m currently working in Front-End Development with strong expertise in <strong className="text-blue-600">React.js (Redux), Next.js, and Tailwind CSS</strong>, and in Backend Development with <strong className="text-purple-600">Node.js, Express.js, MongoDB (Mongoose), TypeScript, Prisma, and Docker</strong>. I have completed a MERN Stack Development course and worked on several full-stack projects. I recently completed an internship at <strong className="text-blue-500">BD Calling It Ltd</strong>, where I enhanced my full-stack and analytical skills.
           </p>
+
           <div className="flex justify-between">
             <motion.img
-            className="w-20"
-            src={img}
-            alt="React Logo"
-            animate={{ scale: [1, 2, 1] }} // scale from normal to bigger and back
-            transition={{
-              duration: 2, // total duration of one cycle
-              repeat: Infinity, // keep repeating
-              ease: "easeInOut", // smooth animation
-            }}
-          />
+              className="w-20"
+              src={img}
+              alt="React Logo"
+              animate={{ scale: [1, 2, 1] }} // scale from normal to bigger and back
+              transition={{
+                duration: 2, // total duration of one cycle
+                repeat: Infinity, // keep repeating
+                ease: "easeInOut", // smooth animation
+              }}
+            />
 
-          <motion.img
-            className="w-20"
-            src={img2}
-            alt="React Logo"
-            animate={{ scale: [1, 2, 1] }} // scale from normal to bigger and back
-            transition={{
-              duration: 2, // total duration of one cycle
-              repeat: Infinity, // keep repeating
-              ease: "easeInOut", // smooth animation
-            }}
-          />
+            <motion.img
+              className="w-20"
+              src={img2}
+              alt="React Logo"
+              animate={{ scale: [1, 2, 1] }} // scale from normal to bigger and back
+              transition={{
+                duration: 2, // total duration of one cycle
+                repeat: Infinity, // keep repeating
+                ease: "easeInOut", // smooth animation
+              }}
+            />
           </div>
         </div>
       </div>

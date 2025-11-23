@@ -1,6 +1,6 @@
 /* Active link underline animation */
 .active {
-  color: red;
+  color: blue;
   position: relative;
 }
 
@@ -11,7 +11,7 @@
   bottom: -3px; /* underline position */
   height: 3px;  /* underline thickness */
   width: 0;
-  background-color: red;
+  background-color: blue;
   transition: width 0.5s ease-in-out;
 }
 

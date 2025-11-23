@@ -5,12 +5,16 @@ import { LiaLinkedin } from "react-icons/lia";
 import resume from "../../assets/RESUME.pdf";
 import react from "../../assets/animated/react.svg";
 import { motion } from "framer-motion";
+import { MdWeb } from "react-icons/md";
 
 export default function Hero() {
   const texts = [
-    "MERN Stack Developer",
-    "Front-end Developer",
-    "Full-Stack Developer",
+    "React js",
+    "Type Script",
+    "Next js",
+    "Node js",
+    "Express js",
+    "Mongo DB",
   ];
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -50,25 +54,26 @@ export default function Hero() {
 
   return (
     <div className="hero bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-20">
-      <div className="hero-content flex flex-col-reverse md:flex-row items-center gap-10">
+      <div className="hero-content mt-10 flex flex-col-reverse md:flex-row items-center gap-10">
         {/* ===== Text Section ===== */}
         <div
           data-aos="fade-right"
           data-aos-duration="2000"
-          className="text-center md:text-left w-full md:w-1/2"
+          className="text-center md:text-left w-full md:w-1/2 "
         >
           <h1 className=" my-name text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
             Ashik Khan
           </h1>
+          <h1 className="text-md md:text-2xl">a <span className="text-blue-600 font-semibold">MERN Stack Developer</span> who builds fast, scalable <strong className="flex items-center gap-2 text-purple-600">web application <MdWeb className="text-blue-600" /></strong> </h1>
 
           {/* Dynamic typing text */}
           <h2 className="h-6 text-cyan-400 text-xl  font-semibold mt-3">
-            {displayText}
+            Expert of : {displayText}
           </h2>
 
-          <h3 className="font-bold text-gray-400 text-sm sm:text-base md:text-lg mt-2">
-            Junior Front-End Developer || Junior MERN Stack Developer ||
-            Junior Full-Stack Developer
+          <h3 className="font-bold text-gray-400 text-sm sm:text-base md:text-md mt-2">
+            Front-End Developer ||  MERN Stack Developer ||
+            Full-Stack Developer
           </h3>
 
           <p className="py-6 text-gray-300 text-sm sm:text-base">
@@ -147,11 +152,19 @@ export default function Hero() {
           data-aos-duration="2000"
           className="flex flex-col items-center w-full md:w-1/2"
         >
-          <img
-            src={ashik}
-            className="w-60 sm:w-72 md:w-96 border-b-4 rounded-full border-blue-950 mb-5"
-            alt="Ashik Khan"
-          />
+          <div className="relative w-fit mx-auto">
+            {/* Glow Background */}
+            <div className="absolute  inset-0 rounded-full 
+                  bg-cyan-400/40 blur-3xl scale-150"></div>
+
+            {/* Image */}
+            <img
+              src={ashik}
+              alt="Ashik Khan"
+              className="relative w-60 sm:w-72 md:w-96 border-b border-blue-500  rounded-xl"
+            />
+          </div>
+
 
           {/* Rotating React Logo */}
           <motion.img
