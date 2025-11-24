@@ -16,7 +16,7 @@ export default function About() {
           <img
             src={ashik}
             alt="Ashik Khan"
-            className="relative w-[400px] -mt-28 ml-20 border-b border-blue-500  rounded-xl"
+            className="relative w-[400px] -mt-28 md:ml-20 border-b border-blue-500  rounded-xl"
           />
         </div>
         <div data-aos="fade-up" data-aos-duration="3000" className="p-5 md:w-1/2">

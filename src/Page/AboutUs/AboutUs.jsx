@@ -4,13 +4,13 @@ import clg from '../../assets/ppi.jfif'
 
 export default function AboutUs() {
     return (
-        <div>
+        <div className='pt-32 md:pt-10'>
             <About></About>
             <div>
                 <h1 className="text-5xl font-bold text-cyan-600 text-center py-10">---My Study---</h1>
                 <div className='md:flex mx-auto px-10'>
                     <img data-aos="fade-left"
-                        data-aos-duration="3000" src={clg}className=' w-5/12 rounded-md' alt="" />
+                        data-aos-duration="3000" src={clg} className=' w-5/12 rounded-md' alt="" />
                     <div data-aos="fade-right"
                         data-aos-duration="3000" className='ml-10 w-7/12 space-y-2'>
                         <h1 className="text-2xl md:text-4xl text-center font-bold">Pabna Polytechnic Institute</h1>

@@ -22,7 +22,7 @@ export default function Skills() {
     <div className="  py-10">
       <div className="flex items-center mx-auto justify-center">
         <motion.img
-          className="w-40"
+          className="w-40 hidden md:block"
           src={img2}
           alt="React Logo"
           animate={{ scale: [1, 2, 1] }} // scale from normal to bigger and back
@@ -38,7 +38,7 @@ export default function Skills() {
 
         </h1>
         <motion.img
-          className="w-40"
+          className="w-40 hidden md:block"
           src={img}
           alt="React Logo"
           animate={{ rotate: 360 }} // scale from normal to bigger and back

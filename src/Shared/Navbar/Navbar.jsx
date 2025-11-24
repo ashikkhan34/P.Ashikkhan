@@ -86,7 +86,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden focus:outline-none mr-28"
+          className="md:hidden focus:outline-none mr-10"
         >
           {isOpen ? (
             <svg
