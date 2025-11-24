@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-900 via-blue-950 to-purple-950 text-white py-16 px-5 md:px-20 flex flex-col justify-center items-center">
+    <section className="min-h-screen text-white py-16 px-5 md:px-20 flex flex-col justify-center items-center">
       <h1 className="text-4xl md:text-5xl mt-5 font-bold text-center text-cyan-400 mb-12">
         Let’s Work Together 🤝
       </h1>

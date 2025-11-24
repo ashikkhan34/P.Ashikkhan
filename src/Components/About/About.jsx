@@ -6,15 +6,20 @@ import img from "../../assets/animated/triangle.svg";
 import img2 from "../../assets/animated/blue-square.svg";
 export default function About() {
   return (
-    <div className="hero  bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen">
-      <div className="container hero-content flex-col lg:flex-row-reverse">
-        <img
-          data-aos="fade-left"
-          data-aos-duration="3000"
-          src={ashik}
-          className="border-b-4 border-blue-900 drop-shadow-xl rounded-b-full"
-        />
-        <div data-aos="fade-up" data-aos-duration="3000" className="p-5">
+    <div className="hero min-h-screen">
+      <div className="container hero-content flex-col lg:flex-row-reverse items-center">
+        <div className="relative w-1/2 mx-auto">
+          {/* Glow Background */}
+          <div className="absolute  inset-0 rounded-full bg-cyan-400/40 blur-3xl scale-150"></div>
+
+          {/* Image */}
+          <img
+            src={ashik}
+            alt="Ashik Khan"
+            className="relative w-[400px] -mt-28 ml-20 border-b border-blue-500  rounded-xl"
+          />
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" className="p-5 md:w-1/2">
           <h1 className="text-5xl text-green-500 font-bold">Md.Ashik khan</h1>
           <p className="py-6">
             I am Md. Ashik Khan, a Computer Engineer and MERN Stack Developer. I’m currently working in Front-End Development with strong expertise in <strong className="text-blue-600">React.js (Redux), Next.js, and Tailwind CSS</strong>, and in Backend Development with <strong className="text-purple-600">Node.js, Express.js, MongoDB (Mongoose), TypeScript, Prisma, and Docker</strong>. I have completed a MERN Stack Development course and worked on several full-stack projects. I recently completed an internship at <strong className="text-blue-500">BD Calling It Ltd</strong>, where I enhanced my full-stack and analytical skills.

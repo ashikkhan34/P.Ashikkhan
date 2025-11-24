@@ -7,8 +7,8 @@ export default function AllProjects() {
   const [projects] = useProjects();
   return (
     <div className="pt-16 ">
-      <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen">
-        <h1 className="text-5xl text-center p-8 font-bold  text-cyan-500">
+      <div className=" min-h-screen">
+        <h1 className="md:text-5xl text-2xl text-center p-8 font-bold  text-cyan-500">
           ---My All Projects---{" "}
         </h1>
 
@@ -19,7 +19,7 @@ export default function AllProjects() {
         >
           {projects.map((project) => (
             <div key={project.id}>
-              <div className="card bg-gray-200/5 h-[400px] transition-all hover:scale-105 hover:shadow-pink-500 duration-500  shadow-sm mb-10">
+              <div className="card bg-gray-200/10  backdrop-blur-sm h-[400px] transition-all hover:scale-105 hover:shadow-pink-500 duration-500  shadow-sm mb-10">
                 <figure>
                   <img src={project.image} className="h-[300px] transition-all duration-300 hover:scale-110 w-full rounded-md" alt="Shoes" />
                 </figure>

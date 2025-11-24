@@ -19,7 +19,7 @@ import img from "../../assets/animated/react.svg";
 import img2 from "../../assets/animated/js.svg";
 export default function Skills() {
   return (
-    <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900  py-10">
+    <div className="  py-10">
       <div className="flex items-center mx-auto justify-center">
         <motion.img
           className="w-40"
@@ -51,31 +51,31 @@ export default function Skills() {
       </div>
       <Marquee>
         <div className="flex gap-6 ">
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-lg ml-5">
             <h1 className="text-auto mt-2 text-center text-blue-400">HTML</h1>
             <img className="mx-auto w-16 p-2 " src={html} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">CSS</h1>
             <img className="mx-auto  w-16 p-2 " src={css} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Java Script</h1>
             <img className="mx-auto  w-16 p-2 " src={js} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">React js </h1>
             <img className="mx-auto  w-16 p-2 " src={react} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Next js</h1>
             <img className="mx-auto  w-16 p-2 " src={next} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">tailwind</h1>
             <img className="mx-auto  w-16 p-2 " src={tailwind} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">bootstrap</h1>
             <img className="mx-auto  w-16 p-2 " src={bootstrap} alt="" />
           </div>
@@ -83,31 +83,31 @@ export default function Skills() {
       </Marquee>
       <Marquee direction="right">
         <div className="flex gap-6">
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-lg ml-5">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-lg ml-5">
             <h1 className="text-auto  text-center text-blue-400">Firebase</h1>
             <img className=" w-16 p-2 mx-auto  " src={firebase} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Express</h1>
             <img className="mx-auto  w-16 p-2 " src={express} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Node js</h1>
             <img className="mx-auto  w-16 p-2 " src={node} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Mongo DB </h1>
             <img className="mx-auto  w-16 p-2 " src={mongodb} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Type Script </h1>
             <img className="mx-auto  w-16 p-2 " src={typeScript} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Prisma </h1>
             <img className="mx-auto  w-16 p-2 " src={prisma} alt="" />
           </div>
-          <div className=" w-32 hover:scale-x-110 hover:rotate-3 bg-indigo-900 rounded-xl mb-6 mt-6 shadow-2xl">
+          <div className=" w-32 bg-gray-200/10  backdrop-blur-sm hover:scale-130 hover:text-white font-bold transition-all duration-300 rounded-xl mb-6 mt-6 shadow-2xl">
             <h1 className="text-center mt-4 text-blue-400">Docker </h1>
             <img className="mx-auto  w-16 p-2 " src={docker} alt="" />
           </div>

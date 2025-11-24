@@ -6,7 +6,7 @@ import { FaArrowUpRightDots, FaLinkSlash } from "react-icons/fa6";
 export default function Projects() {
   const [projects] = useProjects();
   return (
-    <div className="bg-gradient-to-r from-blue-950 via-black to-purple-900 py-10">
+    <div className=" py-10">
       <h1 className="text-5xl text-center p-8 font-bold  text-cyan-500">
         My Projects{" "}
         <p className="w-80  mx-auto text-blue-500 mt-4 active"></p>
@@ -19,7 +19,7 @@ export default function Projects() {
       >
         {projects.slice(0, 3).map((project) => (
           <div key={project.id}>
-            <div className="card bg-gray-200/5 h-[400px] hover:scale-105 hover:ease-in-out transition-all hover:transform hover:duration-1000 hover:shadow-pink-600  shadow-sm">
+            <div className="card bg-gray-200/10  backdrop-blur-sm h-[400px] hover:scale-105 hover:ease-in-out transition-all hover:transform hover:duration-1000 hover:shadow-pink-600  shadow-sm">
               <figure>
                 <img src={project.image} className="h-[300px] transition-all duration-300 hover:scale-110 w-full rounded-md" alt="Shoes" />
               </figure>

@@ -19,12 +19,12 @@ export default function ProjectDetails() {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-black via-purple-950 to-black text-white py-10 md:py-20 px-5 md:px-16 flex flex-col items-center justify-center overflow-x-hidden">
+    <section className="min-h-screen  py-10 md:py-20 px-5 md:px-16 flex flex-col items-center justify-center overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-7xl w-full rounded-3xl bg-white/5 border border-purple-700/40 backdrop-blur-lg shadow-2xl shadow-purple-900/40 overflow-hidden"
+        className="max-w-7xl w-full rounded-3xl bg-white/5  backdrop-blur-sm shadow-2xl shadow-purple-900/40 overflow-hidden"
       >
         {/* Project Image */}
         <div className="relative w-full h-[250px] md:h-[400px] overflow-hidden">
@@ -36,7 +36,7 @@ export default function ProjectDetails() {
             alt={project.name}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0"></div>
           <h1 className="absolute bottom-6 left-6 text-4xl md:text-5xl font-extrabold text-purple-300 drop-shadow-lg">
             {project.name}
           </h1>

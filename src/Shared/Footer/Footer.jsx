@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-gradient-to-r from-purple-950 via-black to-blue-900 text-neutral-content p-10 justify-evenly">
+      <footer className="footer sm:footer-horizontal bg-gray-200/10  backdrop-blur-sm text-neutral-content p-10 justify-evenly">
         <aside>
           {/* Rotating React Logo */}
           <motion.img

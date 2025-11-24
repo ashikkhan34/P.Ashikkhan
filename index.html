@@ -5,14 +5,54 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Ashik khan</title>
+    <title>Ashik Khan</title>
+
+    <style>
+      /* Fullscreen Vanta Background */
+      #vanta-bg {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      }
+    </style>
   </head>
+
   <body>
+    <!-- Vanta Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- React Root -->
     <div id="root"></div>
+
+    <!-- Main React Script -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- Vanta + Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://unpkg.com/vanta@latest/dist/vanta.globe.min.js"></script>
+
+    <!-- Globe Initialization -->
     <script>
-      AOS.init();
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x3062ff,        /* Globe line color */
+        backgroundColor: 0x000000, /* Background color */
+        size: 1.3,
+      });
     </script>
   </body>
 </html>

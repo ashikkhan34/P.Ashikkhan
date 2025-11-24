@@ -53,7 +53,7 @@ export default function Hero() {
   }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
-    <div className="hero bg-gradient-to-r from-blue-950 via-black to-purple-900 min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-20">
+    <div className="hero min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-20">
       <div className="hero-content mt-10 flex flex-col-reverse md:flex-row items-center gap-10">
         {/* ===== Text Section ===== */}
         <div
