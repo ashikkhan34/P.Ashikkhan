@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div className=" py-10 container mx-auto">
       <h1 className="text-5xl text-center p-8 font-bold  text-cyan-500">
-        My Projects{" "}
+      Favorite Projects{" "}
         <p className="w-80  mx-auto text-blue-500 mt-4 active"></p>
       </h1>
 
