@@ -6,24 +6,24 @@ import { motion } from 'framer-motion'
 
 export default function Experience() {
     return (
-        <div className=' '>
+        <div>
             <div data-aos="fade-up"
-                data-aos-duration="3000" className="container bg-gray-200/10  backdrop-blur-sm stats shadow mx-auto block md:flex max-w-2/3  text-white pt-12">
-                <div className="stat place-items-center">
+                data-aos-duration="3000" className="container mx-auto bg-gray-200/10  backdrop-blur-sm stats shadow block md:flex max-w-2/3  text-white pt-12">
+                <div className="stat  place-items-center">
                     <div className="stat-title text-white">Projects</div>
-                    <div className="stat-value"><CountUp end={55} duration={10}></CountUp></div>
+                    <div className="stat-value text-blue-600"><CountUp end={55} duration={10}></CountUp></div>
                     <div className="stat-desc text-white">From 2024 to February 2025</div>
                 </div>
 
                 <div className="stat place-items-center">
                     <div className="stat-title text-white">Experience</div>
-                    <div className="stat-value text-secondary">1 </div>
+                    <div className="stat-value text-secondary">2 </div>
                     <div className="stat-desc text-secondary">↗︎ Learning Experience of Home </div>
                 </div>
 
                 <div className="stat place-items-center">
                     <div className="stat-title text-white">Task done</div>
-                    <div className="stat-value"><CountUp end={90} duration={10}></CountUp> (<CountUp end={85} duration={15}></CountUp>)%</div>
+                    <div className="stat-value text-blue-600"><CountUp end={90} duration={10}></CountUp> (<CountUp end={85} duration={15}></CountUp>)%</div>
                     <div className="stat-desc text-white">Continue working </div>
                 </div>
             </div>

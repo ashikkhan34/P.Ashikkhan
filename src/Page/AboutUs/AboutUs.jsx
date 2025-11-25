@@ -6,13 +6,13 @@ export default function AboutUs() {
     return (
         <div className='pt-32 md:pt-10'>
             <About></About>
-            <div>
-                <h1 className="text-5xl font-bold text-cyan-600 text-center py-10">---My Study---</h1>
+            <div className='container mx-auto'>
+                <h1 className="md:text-5xl text-2xl font-bold text-cyan-600 text-center py-10">---My Study---</h1>
                 <div className='md:flex mx-auto px-10'>
                     <img data-aos="fade-left"
-                        data-aos-duration="3000" src={clg} className=' w-5/12 rounded-md' alt="" />
+                        data-aos-duration="3000" src={clg} className=' md:w-5/12 rounded-md object-cover bg-center ml-10' alt="" />
                     <div data-aos="fade-right"
-                        data-aos-duration="3000" className='ml-10 w-7/12 space-y-2'>
+                        data-aos-duration="3000" className='ml-10 md:w-7/12 space-y-2'>
                         <h1 className="text-2xl md:text-4xl text-center font-bold">Pabna Polytechnic Institute</h1>
                         <p className='text-gray-200 font-bold text-center'>I am a student of PPI . I am a CST(Computer Science and Technology) student.</p>
                         <p className='text-gray-300 text-center bg-gray-200/10  backdrop-blur-sm p-6 rounded-xl'>Md. Ashik Khan is a dedicated Computer Science and Technology (CST) student at PPI. With a passion for coding and technology, he is continuously learning and exploring new advancements in the field. His expertise in front-end development and the MERN stack allows him to build dynamic and efficient web applications. Always eager to enhance his skills, Ashik is committed to growing as a developer and making an impact in the tech world. 🚀</p>

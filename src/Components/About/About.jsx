@@ -6,7 +6,7 @@ import img from "../../assets/animated/triangle.svg";
 import img2 from "../../assets/animated/blue-square.svg";
 export default function About() {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero container mx-auto">
       <div className="container hero-content flex-col lg:flex-row-reverse items-center">
         <div className="relative w-1/2 mx-auto">
           {/* Glow Background */}

@@ -6,8 +6,8 @@ import { FaArrowUpRightDots, FaLinkSlash } from "react-icons/fa6";
 export default function AllProjects() {
   const [projects] = useProjects();
   return (
-    <div className="pt-16 ">
-      <div className=" min-h-screen">
+    <div className="pt-16 container mx-auto ">
+      <div>
         <h1 className="md:text-5xl text-2xl text-center p-8 font-bold  text-cyan-500">
           ---My All Projects---{" "}
         </h1>
@@ -15,11 +15,11 @@ export default function AllProjects() {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 "
+          className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5  rounded-md"
         >
           {projects.map((project) => (
             <div key={project.id}>
-              <div className="card bg-gray-200/10  backdrop-blur-sm h-[400px] transition-all hover:scale-105 hover:shadow-pink-500 duration-500  shadow-sm mb-10">
+              <div className="card bg-gray-200/10  backdrop-blur-sm h-[400px] transition-all hover:scale-105 hover:shadow-pink-500 duration-500  shadow-sm mb-10  ">
                 <figure>
                   <img src={project.image} className="h-[300px] transition-all duration-300 hover:scale-110 w-full rounded-md" alt="Shoes" />
                 </figure>

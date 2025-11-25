@@ -5,7 +5,7 @@ import { SiCodefresh } from "react-icons/si";
 export default function Feature() {
   return (
     <div>
-      <div className="container md:flex justify-evenly py-10 px-20 space-y-5 ">
+      <div className="container mx-auto md:flex justify-evenly py-10 px-20 space-y-5 ">
         <div
           data-aos="fade-up"
           data-aos-duration="2000"

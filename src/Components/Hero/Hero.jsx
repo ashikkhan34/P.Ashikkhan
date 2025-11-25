@@ -52,8 +52,42 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, textIndex, texts]);
 
+
+  const positions = ["Frontend Developer", "MERN Stack Developer", "Backend Developer", "Full-Stack Developer"];
+  const [posIndex, setPosIndex] = useState(0);
+  const [posChar, setPosChar] = useState(0);
+  const [posDelete, setPosDelete] = useState(false);
+  const [posText, setPosText] = useState("");
+
+
+  useEffect(() => {
+    const typePosition = () => {
+      if (!posDelete) {
+        if (posChar < positions[posIndex].length) {
+          setPosText(prev => prev + positions[posIndex].charAt(posChar));
+          setPosChar(prev => prev + 1);
+        } else {
+          setTimeout(() => setPosDelete(true), 1200);
+        }
+      } else {
+        if (posChar > 0) {
+          setPosText(prev => prev.slice(0, -1));
+          setPosChar(prev => prev - 1);
+        } else {
+          setPosDelete(false);
+          setPosIndex(prev => (prev + 1) % positions.length);
+        }
+      }
+    };
+
+    const timer = setTimeout(typePosition, posDelete ? 50 : 100);
+    return () => clearTimeout(timer);
+  }, [posChar, posDelete, posIndex]);
+
+
+
   return (
-    <div className="hero min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-20">
+    <div className="hero flex items-center justify-center px-5 sm:px-10 md:px-20">
       <div className="hero-content mt-10 flex flex-col-reverse md:flex-row items-center gap-10 w-full">
         {/* ===== Text Section ===== */}
         <div className="text-center md:text-left w-full sm:w-11/12 md:w-1/2 -mt-20">
@@ -134,7 +168,7 @@ export default function Hero() {
                 <span className="text-purple-400">const</span> coder = {'{'}{'\n'}
 
                 &nbsp;&nbsp;<span className="text-blue-400">name</span>: <span className="text-yellow-300">'Md.Ashik Khan'</span>,{'\n'}
-                &nbsp;&nbsp;<span className="text-blue-400">position</span>: <span className="text-yellow-300">MERN Stack Developer</span>,{'\n'}
+                &nbsp;&nbsp;<span className="text-blue-400">position</span>: <span className="text-yellow-300">{posText}</span>,{'\n'}
 
                 &nbsp;&nbsp;<span className="text-blue-400">skills</span>: [
                 <span className="text-green-400">"TypeScript"</span>,
