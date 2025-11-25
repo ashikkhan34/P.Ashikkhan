@@ -7,9 +7,9 @@ export default function Projects() {
   const [projects] = useProjects();
   return (
     <div className=" py-10 container mx-auto">
-      <h1 className="text-5xl text-center p-8 font-bold  text-cyan-500">
+      <h1 className="md:text-5xl text-2xl text-center p-8 font-bold  text-cyan-500">
       Favorite Projects{" "}
-        <p className="w-80  mx-auto text-blue-500 mt-4 active"></p>
+        <p className="md:w-96 w-56   mx-auto text-blue-500 mt-4 active"></p>
       </h1>
 
       <div
