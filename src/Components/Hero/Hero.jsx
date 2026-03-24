@@ -47,35 +47,38 @@ export default function Hero() {
 
     const timer = setTimeout(
       handleTyping,
-      isDeleting ? erasingSpeed : typingSpeed
+      isDeleting ? erasingSpeed : typingSpeed,
     );
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, textIndex, texts]);
 
-
-  const positions = ["Frontend Developer", "MERN Stack Developer", "Backend Developer", "Full-Stack Developer"];
+  const positions = [
+    "Frontend Developer",
+    "MERN Stack Developer",
+    "Backend Developer",
+    "Full-Stack Developer",
+  ];
   const [posIndex, setPosIndex] = useState(0);
   const [posChar, setPosChar] = useState(0);
   const [posDelete, setPosDelete] = useState(false);
   const [posText, setPosText] = useState("");
 
-
   useEffect(() => {
     const typePosition = () => {
       if (!posDelete) {
         if (posChar < positions[posIndex].length) {
-          setPosText(prev => prev + positions[posIndex].charAt(posChar));
-          setPosChar(prev => prev + 1);
+          setPosText((prev) => prev + positions[posIndex].charAt(posChar));
+          setPosChar((prev) => prev + 1);
         } else {
           setTimeout(() => setPosDelete(true), 1200);
         }
       } else {
         if (posChar > 0) {
-          setPosText(prev => prev.slice(0, -1));
-          setPosChar(prev => prev - 1);
+          setPosText((prev) => prev.slice(0, -1));
+          setPosChar((prev) => prev - 1);
         } else {
           setPosDelete(false);
-          setPosIndex(prev => (prev + 1) % positions.length);
+          setPosIndex((prev) => (prev + 1) % positions.length);
         }
       }
     };
@@ -83,8 +86,6 @@ export default function Hero() {
     const timer = setTimeout(typePosition, posDelete ? 50 : 100);
     return () => clearTimeout(timer);
   }, [posChar, posDelete, posIndex]);
-
-
 
   return (
     <div className="hero flex items-center justify-center px-5 sm:px-10 md:px-20">
@@ -95,8 +96,12 @@ export default function Hero() {
             Ashik Khan
           </h1>
           <h1 className="text-md md:text-2xl mt-2">
-            a <span className="text-blue-600 font-semibold">MERN Stack Developer</span> who builds fast, scalable  <span className="font-bold text-purple-600">
-              web application. </span>
+            a{" "}
+            <span className="text-blue-600 font-semibold">
+              MERN Stack Developer
+            </span>{" "}
+            who builds fast, scalable{" "}
+            <span className="font-bold text-purple-600">web application. </span>
           </h1>
 
           {/* Dynamic typing text */}
@@ -109,18 +114,32 @@ export default function Hero() {
           </h3>
 
           <p className="py-6 text-gray-300 text-sm sm:text-base">
-            As a web developer, you don’t just write code—you craft digital experiences that seamlessly blend functionality with creativity, turning ideas into interactive realities. 🚀💻
+            As a web developer, you don’t just write code—you craft digital
+            experiences that seamlessly blend functionality with creativity,
+            turning ideas into interactive realities. 🚀💻
           </p>
 
           {/* Social Links */}
           <div className="flex justify-center md:justify-start gap-5 mb-5">
-            <a href="https://www.facebook.com/profile.php?id=100069225215551" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/profile.php?id=100069225215551"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebook className="text-3xl text-blue-600 hover:scale-110 transition-transform" />
             </a>
-            <a href="https://www.linkedin.com/in/dev-ashikkhan/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/dev-ashikkhan/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LiaLinkedin className="text-3xl text-blue-500 hover:scale-110 transition-transform" />
             </a>
-            <a href="https://github.com/ashikkhan34" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/ashikkhan34"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub className="text-3xl text-white hover:scale-110 transition-transform" />
             </a>
           </div>
@@ -134,13 +153,33 @@ export default function Hero() {
             >
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
               <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
                 </svg>
               </span>
               <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                <svg
+                  className="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
                 </svg>
               </span>
               <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
@@ -165,32 +204,58 @@ export default function Hero() {
             {/* Code Snippet */}
             <pre className="font-dmMono  text-sm leading-6">
               <code>
-                <span className="text-purple-400">const</span> coder = {'{'}{'\n'}
-
-                &nbsp;&nbsp;<span className="text-blue-400">name</span>: <span className="text-yellow-300">'Md.Ashik Khan'</span>,{'\n'}
-                &nbsp;&nbsp;<span className="text-blue-400">position</span>: <span className="text-yellow-300">{posText}</span>,{'\n'}
-
-                &nbsp;&nbsp;<span className="text-blue-400">skills</span>: [
-                <span className="text-green-400">"TypeScript"</span>,
-                <span className="text-green-400">"React"</span>,
-                <span className="text-green-400">"Next"</span>,
-                <span className="text-green-400">"NodeJS"</span>,
-                <span className="text-green-400">"MongoDB"</span>,
-                <span className="text-green-400">"ExpressJS"</span>
-                ],{'\n'}
-
-                &nbsp;&nbsp;<span className="text-blue-400">hardWorker</span>: <span className="text-purple-400">true</span>,{'\n'}
-                &nbsp;&nbsp;<span className="text-blue-400">quickLearner</span>: <span className="text-purple-400">true</span>,{'\n'}
-                &nbsp;&nbsp;<span className="text-blue-400">problemSolver</span>: <span className="text-purple-400">true</span>,{'\n'}
-
-                &nbsp;&nbsp;<span className="text-blue-400">hireable</span>: function() {'{'}{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-purple-400">return</span> ({'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.hardWorker <span className="text-blue-400">&&</span>{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.problemSolver  <span className="text-blue-400">&&</span>{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.skills.length {'>='} <span className="text-orange-400">5</span>{'\n'}
-                &nbsp;&nbsp;&nbsp;&nbsp;);{'\n'}
-                &nbsp;&nbsp;{'}'},{'\n'}
-                {'}'};
+                <span className="text-purple-400">const</span> coder = {"{"}
+                {"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">name</span>:{" "}
+                <span className="text-yellow-300">'Md.Ashik Khan'</span>,{"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">
+                  position
+                </span>:{" "}
+                {/* Mobile device-e (sm-er niche) shudhu eta dekhabe */}
+                <span className="text-yellow-300 sm:hidden">
+                  'MERN Stack Developer'
+                </span>
+                {/* Small device theke baki sob device-e (sm and up) {posText} dekhabe */}
+                <span className="text-yellow-300 hidden sm:inline">
+                  '{posText}'
+                </span>
+                ,{"\n"}
+                &nbsp;&nbsp;
+                <span className="text-blue-400 ">skills</span>: [
+                <span className="text-green-400 text-xs ">"TypeScript"</span>,
+                <span className="text-green-400 text-xs ">"React"</span>,
+                <span className="text-green-400 text-xs ">"Next"</span>,
+                <span className="text-green-400 text-xs ">"NodeJS"</span>,
+                <span className="text-green-400 text-xs ">"MongoDB"</span>,
+                <span className="text-green-400 text-xs ">"ExpressJS"</span>
+                ],{"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">
+                  hardWorker
+                </span>: <span className="text-purple-400">true</span>,{"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">
+                  quickLearner
+                </span>: <span className="text-purple-400">true</span>,{"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">problemSolver</span>
+                : <span className="text-purple-400">true</span>,{"\n"}
+                &nbsp;&nbsp;<span className="text-blue-400">hireable</span>:
+                function() {"{"}
+                {"\n"}
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span className="text-purple-400">return</span> ({"\n"}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.hardWorker{" "}
+                <span className="text-blue-400">&&</span>
+                {"\n"}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.problemSolver{" "}
+                <span className="text-blue-400">&&</span>
+                {"\n"}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.skills.length {
+                  ">="
+                }{" "}
+                <span className="text-orange-400">5</span>
+                {"\n"}
+                &nbsp;&nbsp;&nbsp;&nbsp;);{"\n"}
+                &nbsp;&nbsp;{"}"},{"\n"}
+                {"}"};
               </code>
             </pre>
           </div>

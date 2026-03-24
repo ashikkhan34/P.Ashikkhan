@@ -124,9 +124,9 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       <div
-        className={`md:hidden bg-indigo-950 text-white transition-all duration-500 ease-in-out overflow-hidden mr-10 ${
-          isOpen ? "opacity-100 py-3" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 inset-0 bg-purple-900 shadow-lg
+  transform transition-transform duration-300 ease-in-out
+  ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <ul className="flex flex-col items-center gap-4 text-lg font-medium">
           {links}

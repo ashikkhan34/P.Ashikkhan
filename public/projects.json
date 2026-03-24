@@ -1,5 +1,19 @@
 [
   {
+    "id": 64,
+    "name": "Dress Shop",
+    "image": "https://i.ibb.co.com/DNYKLJx/Screenshot-2026-03-24-221058.png",
+    "description": "Welcome to our Dress Shop, where fashion meets quality and affordability. We specialize in offering a wide range of stylish dresses designed to suit every occasion — whether it's casual outings, office wear, festive celebrations, or special events.Our collection is curated to keep up with the latest trends while maintaining comfort and durability. We believe that everyone deserves to look good without compromising on quality or budget.With a user-friendly shopping experience, secure payment options, and reliable customer support, we are committed to providing you with a seamless online shopping journey.Discover your perfect style with us today.",
+    "technologies": ["Next.js", "Type Script", "Next Auth", "Tailwind CSS"],
+    "github_clint": "https://github.com/ashikkhan34/dress-shop",
+    "live": "https://dress-shop-z19h.vercel.app/",
+    "features": [
+      "Secure User Authentication ",
+      "Dynamic Product & Cart Management",
+      "Fully Responsive & Modern UI/UX"
+    ]
+  },
+  {
     "id": 65,
     "name": "Mamarhat E-commerce",
     "image": "https://i.ibb.co.com/Lz0svXGx/nutrition-facts-fresh-vegetable-digital-tablet.jpg",
